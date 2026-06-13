@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Custom command: log in via the Form Authentication page.
+// Fills the username/password fields and submits the login form.
+Cypress.Commands.add('login', (username, password) => {
+  cy.visit('/login')
+  cy.get('#username').clear().type(username)
+  cy.get('#password').clear().type(password)
+  cy.get('button[type="submit"]').click()
+})
