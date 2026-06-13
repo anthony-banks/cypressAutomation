@@ -11,7 +11,11 @@ module.exports = defineConfig({
     defaultCommandTimeout: 7000, // 7 seconds
     pageLoadTimeout: 60000, // 60 seconds
     video: true,
-    videoUploadOnPasses: false,
+    screenshotOnRunFailure: true,
+    retries: {
+      runMode: 2,
+      openMode: 0,
+    },
     chromeWebSecurity: false,
   },
 });
