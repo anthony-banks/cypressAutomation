@@ -1,4 +1,4 @@
-# cypressAutomation
+# Cypress E2E Test Suite
 
 [![Cypress E2E](https://github.com/anthony-banks/cypressAutomation/actions/workflows/cypress.yml/badge.svg)](https://github.com/anthony-banks/cypressAutomation/actions/workflows/cypress.yml)
 
